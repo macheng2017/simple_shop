@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/day715?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="user">root</property>
+	<!-- 	<property name="password">root</property> -->
+		 <property name="password">root</property> 
+		
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">15</property>
+		<property name="minPoolSize">10</property>
+		<property name="maxPoolSize">40</property>
+		<!--解决超过8小时数据库自动断开连接错误  -->
+		<!-- //获取connnection时测试是否有效 -->
+		<property name="testConnectionOnCheckin">true</property>
+		<property name="automaticTestTable">C3P0TestTable</property>
+		<property name="idleConnectionTestPeriod">18000</property>
+		<property name="maxIdleTime" >25000</property>
+		<property name="testConnectionOnCheckout">true</property>
+<!-- testConnectionOnCheckin = true
+//自动测试的table名称
+automaticTestTable=C3P0TestTable
+
+//set to something much less than wait_timeout, prevents connections from going stale   
+idleConnectionTestPeriod = 18000  
+//set to something slightly less than wait_timeout, preventing 'stale' connections from being handed out   
+maxIdleTime = 25000  
+//if you can take the performance 'hit', set to "true"   
+testConnectionOnCheckout = true -->
+		
+		
+	</default-config>
+
+	<named-config name="yydtk">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/day715?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">10</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">20</property>
+	</named-config>
+
+</c3p0-config>
+

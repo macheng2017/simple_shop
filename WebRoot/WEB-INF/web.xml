@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <!--全站编码统一过滤器  -->
+    <filter>
+    		<filter-name>CharacterEncodingFilter</filter-name>
+    		<filter-class>com.spzwl.web.filter.CharacterEncodingFilter</filter-class>
+    		<init-param>
+    			<param-name>charset</param-name>
+    			<param-value>UTF-8</param-value>
+    		</init-param>
+    </filter>
+    <filter-mapping>
+	    	<filter-name>CharacterEncodingFilter</filter-name>
+	    	<url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- 登录权限过滤器 -->
+     <filter>
+    		<filter-name>LoginFilter</filter-name>
+    		<filter-class>com.spzwl.web.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+	    	<filter-name>LoginFilter</filter-name>
+	    	<url-pattern>/servlet/DownLoadServlet</url-pattern>
+	    	<url-pattern>/servlet/DeleteFileServlet</url-pattern>
+	    	<url-pattern>/servlet/UploadServlet</url-pattern>
+	    	<url-pattern>/servlet/ListMyfileServlet</url-pattern>
+	    	<url-pattern>/servlet/LogoutServlet</url-pattern>
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    
+    <!--     配置所有 jpg css js 缓存 24小时  -->
+    <filter>
+    		<filter-name>CatchFilter</filter-name>
+    		<filter-class>com.spzwl.web.filter.CatchFilter</filter-class>
+    <!-- 		<init-param>
+    			<param-name>jpg</param-name>
+    			<param-value>24*7</param-value>
+    		</init-param> -->
+    		<init-param>
+    			<param-name>css</param-name>
+    			<param-value>24</param-value>
+    		</init-param>
+    		<init-param>
+    			<param-name>js</param-name>
+    			<param-value>24</param-value>
+    		</init-param>
+    </filter>
+    <filter-mapping>
+	    	<filter-name>CatchFilter</filter-name>
+<!-- 	    	<url-pattern>*.jpg</url-pattern> -->
+	    	<url-pattern>*.css</url-pattern>
+	    	<url-pattern>*.js</url-pattern>
+    </filter-mapping>
+    
+     <!-- response 压缩过滤器  -->
+    <filter>
+    		<filter-name>GzipFilter</filter-name>
+    		<filter-class>com.spzwl.web.filter.GzipFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+	    	<filter-name>GzipFilter</filter-name>
+	    	<url-pattern>*.jsp</url-pattern>
+	<!-- 如果想让jsp页面压缩则需要添加dispatcher  forward -->
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+	    	<filter-name>GzipFilter</filter-name>
+	    	<url-pattern>*.js</url-pattern>
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+	    	<filter-name>GzipFilter</filter-name>
+	    	<url-pattern>*.css</url-pattern>
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+	    	<filter-name>GzipFilter</filter-name>
+	    	<url-pattern>*.html</url-pattern>
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+   <!--  得出结论是bmp图片需要启用gzip压缩，其效果非常明显，压缩率可高达98%以上，
+    而jpg、png和gif图片则无需启用gzip压缩，这3种图片不但压缩效果不明显，
+    还可能导致压缩后体积变得更大而拖慢网速，实在是多此一举。 -->
+    <filter-mapping>
+	    	<filter-name>GzipFilter</filter-name>
+	    	<url-pattern>*.bmp</url-pattern>
+	    	<dispatcher>REQUEST</dispatcher>
+	    	<dispatcher>FORWARD</dispatcher>
+    </filter-mapping> 
+    
+    
+    
+
+    
+    
+  <servlet>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<servlet-class>com.spzwl.web.control.OrderServlet</servlet-class>
+  </servlet>
+<!--     <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.spzwl.web.control.RegisterServlet</servlet-class>
+  </servlet> -->
+  <servlet>
+    <servlet-name>ImgCodeServlet</servlet-name>
+    <servlet-class>com.spzwl.web.control.ImgCodeServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.spzwl.web.control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.spzwl.web.control.LogoutServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<url-pattern>/servlet/OrderServlet</url-pattern>
+  </servlet-mapping>
+<!--  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping> -->
+  <servlet-mapping>
+    <servlet-name>ImgCodeServlet</servlet-name>
+    <url-pattern>/servlet/ImgCodeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 分页显示订单列表 -->
+   <servlet>
+    <servlet-name>ListMyfileServlet</servlet-name>
+    <servlet-class>com.spzwl.web.control.ListMyfileServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ListMyfileServlet</servlet-name>
+    <url-pattern>/servlet/ListMyfileServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--中转servlet,处理多个servlet请求MainServlet继承了BeanServlet-->
+     
+      <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+  	<servlet-class>com.spzwl.web.control.MainServlet</servlet-class>
+  </servlet>
+      <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>/servlet/MainServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

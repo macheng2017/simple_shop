@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://cx.nanjingqf16.com/dingdan/dingdan_wap_zsy.html?23 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<script type="text/javascript" src="../js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/checkform.js"></script> 
+<!-- <script type="text/javascript" src="../js/wfdq.js" charset="utf-8"></script> -->
+<script type="application/javascript" src="../js/jquery.citys.js"></script>
+<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+
+
+
+<style> 
+
+    ul{list-style: none;}
+    ul li{text-align: left;padding:5px 5px;border-bottom: 1px dotted #cccccc;min-height:20px;vertical-align:middle;}
+    ul li font{color: #0C3}
+	/*
+	*订单的样式
+	*/
+	.order_warp{ margin:0 auto; width: 99%;font-family: "Microsoft YaHei"; font-size: 0.7em; border: 1px solid #cccccc; }
+	.order_new { color: #333; background: #FFF; line-height: 20px; margin: 0 auto; }
+	 
+	.online-order fieldset { border: none; width: 95%;  } 
+	.online-order .notice { color: #D60000; font-weight: normal; margin-left: 10px; line-height: 24px; }
+	.online-order .detailed { border-bottom: 1px solid #cccccc; padding: 6px 0 6px 5px; }
+	.online-order .titless { font-weight: bold; line-height: 24px; width: 85px; text-align: left; }
+	.online-order .titless span { color: #D60000 }
+	.online-order .sub_btn { display: block; width: 120px; height: 35px; line-height: 35px; text-align: center; border: none; background: #FF7200; color: #FFF; font-size: 15px; margin: 10px auto; outline: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-shadow: 0px 1px 0px #F84D00; }
+	.online-order .sub_btn:hover { background: #F84D00 }
+	input{margin:0;padding:0;vertical-align:baseline;border-radius:4px;border:1px solid #ccc;}
+	.unique label { padding-left: 10px;width: 460px;}
+	.lev_mes { width: 65%; height: 52px; color: #ccc; }
+	.texta{font-size:12px;color:#060;padding:1px;border:none;border:1px solid #cdcdcd;background:url(../../img/images/txtbg.gif) no-repeat;border-radius:4px;border:1px solid #ccc;}
+	.fl{float:left;}
+	.fr{float:right;}
+	.number { width: 80px; height: 26px; }
+	.province, .city1, .city2 { width: 32%; height: 24px; }
+	.accurate_position { width: 65%; height: 46px; border-radius:4px;border:1px solid #ccc;}
+	.buyer_name, .phonecall { width: 60%; height: 26px; }
+  	.paybb{height:25px;width:95%;color:#bd0000;border:1px dotted #CCC;background-color:#FFFFE5;}
+</style>
+
+</head>
+<body marginwidth="0" marginheight="0">
+<!-- start  订单中心-------------------------------------------------------------- -->
+<div class="order_warp">
+	<div id="dg" class="order_new">
+		<!--订购表单-->
+		<div class="online-order" style="background-color: #EBFFEF"> 
+			<div align="center" style="background-color: #dc5c95;padding:5px 0px;"><font style="color: white;font-size: 16px;">在线订购</font></div>
+			<form style="margin: 0 auto;width: 95%" method="post" onsubmit="return false">
+				<input type="hidden" name="price" id="price" value="198"> 
+				<input type="hidden" name="orderDetail" id="orderDetail" value="赛乐美-银色-198">
+				<input type="hidden" name="form_code" id="form_code" value="">
+				<input type="hidden" name="productname" id="productname" value="dianziyan"> 
+				<input type="hidden" name="totalprice" id="totalPrice1" value="198">
+				 
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>选择产品：</label><span class="notice">以下内容带*的为必填项</span>
+						<div class="unique" id="selectProduct">
+							<!-- 
+                            <label>
+                            	<input type="radio" value="1" name="wfproduct" price="238" checked="checked" title="好字通-基础版-238">
+                            	<span>《正品好字通》基础套装 238元/套<img src="images/hot.gif" style=" display:inline;"/></span>
+							</label><br />
+							<label>
+								<input type="radio" value="2" name="wfproduct" price="298" title="好字通-高级版-298元/套 ">
+								 <span>《正品好字通》高级套装 298元/套</span>
+							</label><br />  
+							 -->
+						<label>
+						<input type="radio" value="198" name="wfproduct" price="198" title="赛乐美-金色-198">
+						<span>赛乐美电子烟-金色-198元,送4瓶烟油+备用雾化芯+水晶烟嘴</span>
+						</label><br><label>
+						<input type="radio" value="198" name="wfproduct" price="198" title="赛乐美-黑色-198">
+						<span>赛乐美电子烟-黑色-198元,送4瓶烟油+备用雾化芯+水晶烟嘴</span></label><br><label>
+						<input type="radio" value="198" name="wfproduct" price="198" title="赛乐美-银色-198" checked="checked">
+						
+						<span>赛乐美电子烟-银色-198元,送4瓶烟油+备用雾化芯+水晶烟嘴<img src="../img/tj.gif" style="display:inline;">
+						</span></label><br></div>
+						<div class="cl"></div>
+					</div>
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>数量：</label>
+						<div class="cur-prize">
+							<input type="text" value="1" class=" frm_input number" name="wfmun" id="number"> <span style="margin-left: 10px;">总价<b id="totalPrice" style="color: #FF0000">198</b>元
+							</span>
+						</div>
+					</div>
+					<div class="detailed">
+						<label class="titless fl">所在地：</label>（请仔细核对以下地址） <br>
+					</div>
+					<div class="detailed" id="demo">
+						<div class="local">
+							<select class="frm_input province" name="province" id="province"><option value="">== 请选择省份 ==</option></select>
+							<select class="frm_input city1" name="city" id="city"><option value="">== 请选择城市 ==</option></select> 
+							<select class="frm_input city2" name="area" id="zone"><option value="">== 请选择地区 ==</option></select>
+							<!--<select class="frm_input city2" name="zone" id="zone"><option value="">== 请选择地区 ==</option></select>-->
+							  
+							<!--  <p>
+								<select name="province"></select>
+								<select name="city"></select>
+								<select name="area"></select>
+								 
+							  </p>-->
+						</div>
+						
+					</div>
+<!--
+					 <script type="text/javascript">
+						 $('#demo').citys({code:350206});
+					</script>
+					
+-->
+<script type="text/javascript">
+		if(remote_ip_info){
+			$('#demo').citys({province:remote_ip_info['province'],city:remote_ip_info['city'],area:remote_ip_info['district'],valueType:'name'});
+		}	 
+</script>
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>详细地址：</label>
+						<div class="textarea">
+							<textarea class="frm_input accurate_position" name="address" id="address"></textarea>
+						</div>
+					</div>
+
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>姓名：</label>
+						<div class="information">
+							<input type="text" class=" frm_input buyer_name" name="dgname" id="name">
+						</div>
+					</div>
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>手机：</label>
+						<div class="information">
+							<input type="text" class=" frm_input phonecall" name="mob" id="mob">
+						</div>
+					</div>
+					<div class="detailed">
+						<label class="titless fl">QQ：</label>
+						<div class="information">
+							<input type="text" class=" frm_input phonecall" name="qq" id="qq">
+						</div>
+					</div>
+					<div class="detailed">
+						<label class="titless fl"><span>*</span>付款方式：</label>
+						<div class="payment">
+							<label class="delivery"> <input type="radio" name="paytype" value="0" checked="checked" id="paytype">货到付款
+							</label>
+							<!-- 
+							<div id="paydiv0" class="paybb " style="margin-left: 2px;">
+								<span style="padding-left: 1px;">温馨提示：货物送到,开箱确认,再付款！</span><br /> 
+							</div>
+							 -->
+						</div>
+
+					</div>
+
+					<div class="detailed">
+						<label class="titless fl">留言：</label>
+						<div class="textarea">
+							<textarea placeholder="请尽快安排发货，送货之前手机联系，谢谢！" class="frm_input lev_mes texta" name="guest" id="guestremark"></textarea>
+						</div>
+					</div>
+					<div class="detailed">
+					<input type="button" name="wfsubmit" value="立即提交订单" class="sub_btn" id="submit">
+					 </div> 
+			</form> 
+		</div>
+	</div>
+</div>
+<div class="order_warp" style="border-top: 0;background-color: #EFEFEF">
+	<!--滚动名单-->
+	<div style="text-align: center; width: 98%">
+		<div class="md"> 
+			<div id="xcnmdemo" style="overflow: hidden; height: 100px; width: 100%; COLOR: #524f4f; FONT-SIZE: 12px; z-index: 1;">
+				<div id="xcnmdemo1"><ul style="padding-left:0px;"><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，吉林省四平市李立 ，(134****1361)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，江苏省盐城市邹家 ，(155****1349)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市大兴区甘道婉 ，(184****4619)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，山西省太原市钟义彪 ，(185****2292)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，江西省九江市戴晓勇 ，(136****1315)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，河南省濮阳市黄红梅 ，(132****8777)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，黑龙江省佳木斯市廖怡婧 ，(132****1542)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，甘肃省嘉峪关市滕红梅 ，(132****6320)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，山东省临沂市陈伟斌 ，(130****9662)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市西城区田先生 ，(139****1526)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，安徽省铜陵市韩智慧 ，(130****5136)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市市辖区边娟 ，(131****2143)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，福建省漳州市张志香 ，(134****1190)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，湖南省株洲市欧阳桂英 ，(137****3426)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，河南省新乡市顾丽亚 ，(153****8852)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，福建省福州市盖东生 ，(159****4520)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，广西防城港市车毅 ，(158****8039)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，广东省汕尾市朱惠 ，(155****1533)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，四川省资阳市刘琛莹 ，(152****8388)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，天津市市辖区哈哈 ，(153****9816)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省忻州市王洪波 ，(155****5516)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省邯郸市罗建荣 ，(151****9590)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省达州市林文默 ，(156****7634)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省驻马店市马庆敏 ，(156****6786)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省南充市谢先生 ，(154****2732)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省佛山市林婷 ，(159****9450)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖县彭益伟 ，(158****6226)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省阜阳市诗菲菲 ，(154****5667)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省宁波市赵意 ，(183****2820)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，福建省宁德市黄加上 ，(186****1273)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，上海市市辖区胡娟 ，(185****2052)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省济南市高培忠 ，(184****6034)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省泰州市杨忠民 ，(189****6172)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省广州市任秀丽 ，(187****3358)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖区姚元章 ，(189****4353)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市市辖县张生 ，(183****8931)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，福建省三明市邱小姐 ，(180****1285)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，西藏区拉萨市张昕 ，(188****6192)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，宁夏石嘴山市武东华 ，(187****7151)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省无锡市罗玉荣 ，(182****3968)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省汕头市刘先生 ，(180****9237)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市天津辖区吴先生 ，(186****7740)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省沧州市李涛 ，(182****1736)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省长沙市徐莉 ，(133****8695)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，甘肃省白银市谢时安 ，(138****6498)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖区刘丹 ，(136****5905)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省永州市金持法 ，(134****3477)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省平顶山市宋改清 ，(138****2312)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省长治市张泽江 ，(137****2837)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省承德市彭伟 ，(133****6600)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省东莞市张代峰 ，(134****4239)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，云南省临沧市魏燕飞 ，(134****6442)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市通州区王亚祥 ，(131****7371)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省亳州市熊芸 ，(131****1631)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省廊坊市乔秋生 ，(133****5222)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省石家庄市龚亚君 ，(136****8975)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市门头沟区杨朝雯 ，(138****2666)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，辽宁省本溪市李小华 ，(138****9661)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，陕西省西安市杨雪 ，(135****7745)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市海淀区徐先生 ，(130****5625)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省临汾市孙建建 ，(139****6215)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市和平区任勇平 ，(137****1361)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省武汉市王佳伟 ，(136****9620)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省常德市唐坤 ，(135****9354)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市东城区曹晓琴 ，(139****8939)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省杭州市刘礼俊 ，(137****4862)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，黑龙江省鸡西市张先生 ，(131****5515)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省南昌市董祖聪 ，(139****4019)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省苏州市高振乾 ，(138****9786)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省温州市韩凤飞 ，(135****8504)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省南通市李云峰 ，(139****2259)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，内蒙古区包头市袁斌 ，(136****8929)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市崇文区崔卫东  ，(139****7865)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省宜宾市张建喜 ，(133****6333)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市河西区覃彩梅 ，(138****8230)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省滁州市谭旭斌 ，(132****2844)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省赣州市王军民 ，(133****3250)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市北京辖区陈新玉 ，(138****3672)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市市辖县罗颖 ，(132****4728)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省南昌市徐女士 ，(139****4405)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省唐山市曾玉兰 ，(135****4784)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，甘肃省兰州市钟长明 ，(136****9127)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省宣城市陈小春 ，(130****7444)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省青岛市安雁炜 ，(135****1895)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省凉山范月红 ，(138****7845)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省吉安市韦锋 ，(136****2472)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市南开区刘琼英 ，(133****2684)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省信阳市陈秀梅 ，(136****7373)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省惠州市石玉 ，(131****6931)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省嘉兴市封佩 ，(131****6100)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省阳江市王兰 ，(133****7057)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省江门市陈伟明 ，(131****9364)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，吉林省长春市单忠芳 ，(133****6095)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，吉林省松原市梁基月 ，(131****1094)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，海南省三亚市姜美花 ，(131****3521)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市香河县明颖 ，(138****3794)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省萍乡市向富权 ，(137****1329)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，贵州省贵阳市张志 ，(134****7659)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市朝阳区郭艳茹 ，(133****8116)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省莱芜市于青 ，(130****1663)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省珠海市叶成颖 ，(133****4223)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省吕梁市孙昌云 ，(135****3297)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省淄博市朱豫杭 ，(131****4280)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，贵州省黔东南张晓璐 ，(134****8362)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省深圳市杨晶晶 ，(130****9812)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市房山区王文科 ，(134****5000)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省怀化市张亚超 ，(132****9172)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省荆门市刘开锋 ，(138****3739)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省泰安市邝先生 ，(139****3144)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省安庆市赵未 ，(135****4953)已发货，请留意查收！</li></ul></div>
+				<div id="xcnmdemo2"><ul style="padding-left:0px;"><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，吉林省四平市李立 ，(134****1361)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，江苏省盐城市邹家 ，(155****1349)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市大兴区甘道婉 ，(184****4619)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，山西省太原市钟义彪 ，(185****2292)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，江西省九江市戴晓勇 ，(136****1315)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，河南省濮阳市黄红梅 ，(132****8777)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，黑龙江省佳木斯市廖怡婧 ，(132****1542)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，甘肃省嘉峪关市滕红梅 ，(132****6320)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，山东省临沂市陈伟斌 ，(130****9662)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市西城区田先生 ，(139****1526)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，安徽省铜陵市韩智慧 ，(130****5136)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，北京市市辖区边娟 ，(131****2143)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，福建省漳州市张志香 ，(134****1190)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，湖南省株洲市欧阳桂英 ，(137****3426)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，河南省新乡市顾丽亚 ，(153****8852)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，福建省福州市盖东生 ，(159****4520)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，广西防城港市车毅 ，(158****8039)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，广东省汕尾市朱惠 ，(155****1533)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，四川省资阳市刘琛莹 ，(152****8388)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月23日，天津市市辖区哈哈 ，(153****9816)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省忻州市王洪波 ，(155****5516)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省邯郸市罗建荣 ，(151****9590)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省达州市林文默 ，(156****7634)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省驻马店市马庆敏 ，(156****6786)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省南充市谢先生 ，(154****2732)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省佛山市林婷 ，(159****9450)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖县彭益伟 ，(158****6226)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省阜阳市诗菲菲 ，(154****5667)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省宁波市赵意 ，(183****2820)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，福建省宁德市黄加上 ，(186****1273)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，上海市市辖区胡娟 ，(185****2052)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省济南市高培忠 ，(184****6034)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省泰州市杨忠民 ，(189****6172)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省广州市任秀丽 ，(187****3358)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖区姚元章 ，(189****4353)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市市辖县张生 ，(183****8931)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，福建省三明市邱小姐 ，(180****1285)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，西藏区拉萨市张昕 ，(188****6192)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，宁夏石嘴山市武东华 ，(187****7151)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省无锡市罗玉荣 ，(182****3968)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省汕头市刘先生 ，(180****9237)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市天津辖区吴先生 ，(186****7740)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省沧州市李涛 ，(182****1736)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省长沙市徐莉 ，(133****8695)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，甘肃省白银市谢时安 ，(138****6498)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，重庆市市辖区刘丹 ，(136****5905)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省永州市金持法 ，(134****3477)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省平顶山市宋改清 ，(138****2312)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省长治市张泽江 ，(137****2837)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省承德市彭伟 ，(133****6600)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省东莞市张代峰 ，(134****4239)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，云南省临沧市魏燕飞 ，(134****6442)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市通州区王亚祥 ，(131****7371)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省亳州市熊芸 ，(131****1631)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省廊坊市乔秋生 ，(133****5222)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省石家庄市龚亚君 ，(136****8975)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市门头沟区杨朝雯 ，(138****2666)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，辽宁省本溪市李小华 ，(138****9661)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，陕西省西安市杨雪 ，(135****7745)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市海淀区徐先生 ，(130****5625)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省临汾市孙建建 ，(139****6215)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市和平区任勇平 ，(137****1361)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省武汉市王佳伟 ，(136****9620)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省常德市唐坤 ，(135****9354)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市东城区曹晓琴 ，(139****8939)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省杭州市刘礼俊 ，(137****4862)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，黑龙江省鸡西市张先生 ，(131****5515)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省南昌市董祖聪 ，(139****4019)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省苏州市高振乾 ，(138****9786)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省温州市韩凤飞 ，(135****8504)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江苏省南通市李云峰 ，(139****2259)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，内蒙古区包头市袁斌 ，(136****8929)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市崇文区崔卫东  ，(139****7865)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省宜宾市张建喜 ，(133****6333)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市河西区覃彩梅 ，(138****8230)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省滁州市谭旭斌 ，(132****2844)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省赣州市王军民 ，(133****3250)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市北京辖区陈新玉 ，(138****3672)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市市辖县罗颖 ，(132****4728)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省南昌市徐女士 ，(139****4405)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河北省唐山市曾玉兰 ，(135****4784)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，甘肃省兰州市钟长明 ，(136****9127)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省宣城市陈小春 ，(130****7444)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省青岛市安雁炜 ，(135****1895)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，四川省凉山范月红 ，(138****7845)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省吉安市韦锋 ，(136****2472)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，天津市南开区刘琼英 ，(133****2684)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，河南省信阳市陈秀梅 ，(136****7373)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省惠州市石玉 ，(131****6931)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，浙江省嘉兴市封佩 ，(131****6100)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省阳江市王兰 ，(133****7057)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省江门市陈伟明 ，(131****9364)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，吉林省长春市单忠芳 ，(133****6095)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，吉林省松原市梁基月 ，(131****1094)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，海南省三亚市姜美花 ，(131****3521)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市香河县明颖 ，(138****3794)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，江西省萍乡市向富权 ，(137****1329)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，贵州省贵阳市张志 ，(134****7659)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市朝阳区郭艳茹 ，(133****8116)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省莱芜市于青 ，(130****1663)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省珠海市叶成颖 ，(133****4223)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山西省吕梁市孙昌云 ，(135****3297)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省淄博市朱豫杭 ，(131****4280)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，贵州省黔东南张晓璐 ，(134****8362)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，广东省深圳市杨晶晶 ，(130****9812)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，北京市房山区王文科 ，(134****5000)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖南省怀化市张亚超 ，(132****9172)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，湖北省荆门市刘开锋 ，(138****3739)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，山东省泰安市邝先生 ，(139****3144)已发货，请留意查收！</li><li style="  line-height: 20px;"><font>【最新发货】</font>2017年07月22日，安徽省安庆市赵未 ，(135****4953)已发货，请留意查收！</li></ul></div>
+			</div> 
+		</div> 
+	</div> 
+</div>
+
+
+<!-- end   订单中心-------------------------------------------------------------- --> 
+
+<script type="text/javascript">
+	var _device = 'wap'
+	var productnameCh = window.parent.productNameCh;
+	window.onload = function(){
+		productlist();
+		///////////////////////////地区初始化////////////////////////////
+		//new PCAS("province", "city", "zone");
+		
+		getPrice();
+		
+		 $('.unique input:radio').change(function(){
+	        getPrice(); 
+	    });
+	} 
+	 
+
+	///////////////////////////////////////// 填充产品清单 /////////////////////////////////////////
+	function productlist(){
+		var wflistDiv = $('#selectProduct');
+		//产品列表
+		for (var i = 0; i < window.parent.productList.length; i++) {
+			// <label>
+			//<input type="radio" value="1" name="wfproduct" price="238" checked="checked" title="好字通-基础版-238">
+			//<span>《正品好字通》基础套装 238元/套<img src="images/hot.gif" style=" display:inline;"/></span>
+			//</label><br />
+			var p = window.parent.productList[i];
+			var label = $('<label>');
+			var input = $('<input>', {
+				'type' : 'radio',
+				'value' : p.price,
+				'name' : 'wfproduct',
+				'price' : p.price,
+				'title' : p.name
+			});
+			var span = $('<span>').text(p.lable);
+			if (p.ischecked == 'checked') {
+				input.attr('checked', 'checked');
+			}
+			if (p.img && p.img != '') {
+				var img = $('<img>', {
+					'src' : 'images/' + p.img + '.gif',
+					'style' : 'display:inline;'
+				});
+				span.append(img);
+			}
+			var br = $('<br>');
+			label.append(input);
+			label.append(span);
+			wflistDiv.append(label);
+			wflistDiv.append(br);
+		}
+		$('#productname').val(window.parent.productName);
+	}
+	
+
+	//var fieldset =$('#fieldset');
+	//$('#xcnmdemo').height(fieldset.height()-50);
+</script>  
+
+
+<script type="text/javascript">
+///////////////////////////公告滚动,发货通知////////////////////
+var tt1;
+function start(){
+    cnmdemo=document.getElementById("xcnmdemo");
+    cnmdemo1=document.getElementById("xcnmdemo1");
+    cnmdemo2=document.getElementById("xcnmdemo2");
+    if(cnmdemo2==null){
+        return;
+    }
+    ShowNum();
+    clearTimeout(tt1);
+
+    cnmdemo2.innerHTML=cnmdemo1.innerHTML;
+    function mar(){
+        if(cnmdemo.scrollTop>=cnmdemo2.offsetHeight){
+            cnmdemo.scrollTop=0;
+        }else{
+            $(cnmdemo).animate({scrollTop: cnmdemo.scrollTop + 60 +'px'}, 200);
+            //cnmdemo.scrollTop += 70;
+        }
+    }
+    var tt2=setInterval(mar,2000);
+    cnmdemo.onmousemove=function(){
+        clearInterval(tt2);
+    }
+    cnmdemo.onmouseout=function(){
+        tt2=setInterval(mar,1500);
+    }
+}
+tt1=setTimeout(start,1000);
+var mydate=new Date();
+var n1 = mydate.getDate()*(mydate.getDay()+1);
+//随机返回数组中的某个值
+function CreateRecord(obj,i){
+    var k = ('0.'+n1*(i+1));
+    var k2 = k*obj.length;
+    return obj[Math.floor(k2)];
+}
+function CreateRecord1(arr,num){
+    var temp_array = new Array();
+    for (var index in arr) {
+    temp_array.push(arr[index]);
+    }
+    var return_array = new Array();
+    for (var i = 0; i<num; i++) {
+    if (temp_array.length>0) {
+    var arrIndex = Math.floor(Math.random()*temp_array.length);
+    return_array[i] = temp_array[arrIndex];
+    temp_array.splice(arrIndex, 1);
+    } else {
+    break;
+    }
+    }
+    return return_array;
+
+} 
+//获取今天和昨天各应该滚动多少订单
+var todayOrderNum = 0;//获取的数量
+//取得当前日期 格式 yyyy-MM-dd
+function GetNowTime(d){
+    var nowtime=new Date();
+    if(d=='m'){
+        nowtime.setDate(nowtime.getDate()-1);
+    }
+    var nowstr=nowtime.getFullYear()+"年";
+    var nowmonth=nowtime.getMonth()+1;
+    if(nowmonth<10){
+        nowmonth="0"+nowmonth;
+    }
+    //var nowdate=(nowtime.getDate() - 1) ? nowtime.getDate() - 1 : nowtime.getDate();
+    
+    var nowdate=todayOrderNum<getTodayOrderNum(new Date().getHours())?nowtime.getDate():nowtime.getDate() - 1;
+    todayOrderNum++;
+    if(nowdate<10){
+        nowdate="0"+nowdate;
+    }
+    nowstr+=nowmonth+"月"+nowdate+"日";
+    return nowstr;
+}
+//返回字符串
+function ShowNum(){
+    var mycars=new Array("张翔","盛小姐","诗菲菲","张志","武东华","徐女士","叶成颖","刘丹","刘琼英","于青","张志香","王文科","高振乾","罗颖","哈哈","徐先生","罗建荣","崔卫东 ","安雁炜","韦锋","邓永红","姚元章","郭艳茹","谢时安","单忠芳","赵小燕","杨晶晶","田先生","龚亚君","刘金凤","张梅","滕红梅","陶先生","封佩","白娟","杨蕾","李立","陈新玉","宋改清","孙建建","陈伟明","曹晓琴","陈伟斌","孙毓瞳","刘琛莹","罗玉荣","王佳伟","董祖聪","戴刚","杨朝雯","李新枝","张建喜","韩海林","谭旭斌","黄红梅","钟义彪","覃彩梅","张先生","边娟","朱惠","李小华","福小姐","胡娟","刘东亮","吴浩","陈永炎","张成本","陈贵录","李乡","黄其健","彭益伟","唐坤","乔秋生","陈耀斌","殷慧巍","霍家雄","李涛","徐莉","孙昌云","向富权","刘礼俊","叶林彬","刘先生","石玉","刘宝","林文默","王永辉","张昕","刘海燕","郑得英","刘凤云","唐琼","盛武明","帅春燕","廖怡婧","邱小姐","范月红","陈龙","张生","林婷","韩智慧","杨雪","任秀丽","杨洪媛","明颖","欧阳桂英","马庆敏","邹家","高培忠","张泽江","王晓平","张亚超","王兰","邝先生","吴健","谢先生","姜美花","杨玉莲","袁斌","陈小春","蓝慧瑜","任勇平","车毅","杨忠民","曾玉兰","张代峰","黄加上","李云峰","张女士","蒋文龙","王亚祥","赵未","魏燕飞","谭剑乐","钟长明","谭永华","韩凤飞","李兴荣","黄女士","戴晓勇","刘开锋","彭伟","张晓璐","王洪波","朱豫杭","赵意","吴先生","郭继军","康雅洁","熊芸","杨沛光","陈秀梅","梁基月","王军民","龙艳华","盖东生","金持法","廖端","顾丽亚","雷永洪","吴中献","甘道婉","邓金蓉");
+    var mycars2=new Array("天津市和平区","四川省凉山","北京市东城区","广东省广州市","北京市西城区","北京市崇文区","福建省厦门市","山西省太原市","天津市河西区","天津市南开区","天津市市辖区","吉林省长春市","北京市海淀区","湖北省武汉市","河北省石家庄市","北京市通州区","河南省平顶山市","山东省泰安市","辽宁省葫芦岛市","湖南省株洲市","天津市市辖县","安徽省铜陵市","浙江省宁波市","天津市天津辖区","江苏省无锡市","贵州省贵阳市","北京市朝阳区","上海市上海辖区","山西省长治市","河北省秦皇岛市","江苏省南京市","河南省新乡市","湖南省长沙市","北京市香河县","北京市大兴区","河北省唐山市","北京市房山区","北京市门头沟区","陕西省西安市","内蒙古区包头市","重庆市市辖区","河北省沧州市","北京市市辖县","北京市市辖区","广东省江门市","浙江省杭州市","上海市市辖区","北京市北京辖区","山东省临沂市","浙江省嘉兴市","江西省吉安市","山西省吕梁市","江西省赣州市","广东省东莞市","辽宁省鞍山市","广东省惠州市","河南省郑州市","河北省廊坊市","广东省佛山市","广东省深圳市","河南省驻马店市","河北省承德市","四川省达州市","安徽省滁州市","山西省临汾市","福建省宁德市","甘肃省兰州市","山东省莱芜市","山东省济南市","四川省成都市","福建省福州市","安徽省阜阳市","河南省周口市","四川省宜宾市","吉林省松原市","江苏省泰州市","山东省淄博市","湖南省怀化市","广东省珠海市","广东省汕头市","广西防城港市","江苏省苏州市","福建省漳州市","四川省资阳市","黑龙江省佳木斯市","贵州省黔东南","宁夏石嘴山市","重庆市市辖县","湖南省常德市","河北省邯郸市","广东省汕尾市","河南省濮阳市","四川省德阳市","江苏省盐城市","山东省青岛市","江苏省南通市","浙江省温州市","安徽省亳州市","吉林省四平市","江西省九江市","黑龙江省鸡西市","浙江省金华市","江西省萍乡市","福建省三明市","安徽省安庆市","安徽省宣城市","河南省信阳市","湖南省永州市","山西省忻州市","四川省自贡市","湖北省南昌市","辽宁省本溪市","安徽省合肥市","云南省临沧市","江西省南昌市","广东省阳江市","河南省商丘市","福建省龙岩市","西藏区拉萨市","湖北省荆门市","甘肃省白银市","四川省南充市","甘肃省嘉峪关市","海南省三亚市","重庆市市辖区");
+    var mycars1=new Array("13","15","18");
+    //var str="<ul><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp江西省萍乡市<br>朱小梅&nbsp&nbsp(156****5925)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省江门市<br>李雾桢&nbsp&nbsp(138****1335)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp福建省厦门市<br>任先生&nbsp&nbsp(189****9129)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省韶关市<br>夏宝山&nbsp&nbsp(136****6878)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp四川省成都市<br>余希&nbsp&nbsp(139****8335)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp湖北省武汉市<br>符苏&nbsp&nbsp(185****0581)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省广州市<br>宋先生&nbsp&nbsp(188****3085)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp上海市市辖区<br>钱小燕&nbsp&nbsp(137****1092)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp<br>章桂芬&nbsp&nbsp(135****9007)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省广州市<br>陈贞延&nbsp&nbsp(136****9039)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp山东省济南市<br>邢爱民&nbsp&nbsp(186****0626)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp河南省郑州市<br>李素琴&nbsp&nbsp(139****8288)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp浙江省宁波市<br>吴国栋&nbsp&nbsp(131****4392)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp北京市市辖区<br>王新&nbsp&nbsp(150****7894)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp云南省大理白族自治州<br>刘智明&nbsp&nbsp(139****9096)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp云南省玉溪市<br>任红兵&nbsp&nbsp(137****2390)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp重庆市市辖区<br>何大朋&nbsp&nbsp(185****2397)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp贵州省贵阳市<br>周莉&nbsp&nbsp(151****6060)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp湖北省荆州市<br>杨马华&nbsp&nbsp(158****7285)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp辽宁省沈阳市<br>高晶&nbsp&nbsp(135****9703)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省茂名市<br>杨先生 &nbsp&nbsp(137****3362)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp江苏省南京市<br>张文&nbsp&nbsp(136****1055)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp江苏省南通市<br>周步冬&nbsp&nbsp(155****5405)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省佛山市<br>周小姐&nbsp&nbsp(075****16070)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp山东省德州市<br>单金潭&nbsp&nbsp(137****4803)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp<br>董伟英&nbsp&nbsp(153****8899)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp贵州省遵义市<br>吴再铨&nbsp&nbsp(189****8192)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp江苏省苏州市<br>丁红&nbsp&nbsp(189****3678)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp新疆维吾尔自治区自治区直辖县级行政区划<br>董友谊&nbsp&nbsp(189****2281)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp北京市市辖区<br>黄胜南&nbsp&nbsp(186****9906)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp湖北省黄冈市<br>徐振钊&nbsp&nbsp(133****6014)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp浙江省金华市<br>何红丹&nbsp&nbsp(138****4356)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp湖南省郴州市<br> 彭竞&nbsp&nbsp(159****9999)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp安徽省马鞍山市<br>陶庆&nbsp&nbsp(155****6192)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp四川省眉山市<br>魏兵&nbsp&nbsp(139****2777)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp安徽省安庆市<br>金叶&nbsp&nbsp(152****8568)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省河源市<br>张鹏&nbsp&nbsp(186****0762)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp福建省福州市<br>江振修&nbsp&nbsp(138****9755)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp广东省清远市<br>黄俊辉&nbsp&nbsp(159****5262)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp黑龙江省哈尔滨市<br>陈德铭&nbsp&nbsp(130****2838)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp江苏省苏州市<br>金锡娟&nbsp&nbsp(158****1745)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp吉林省吉林市<br>高峰峰&nbsp&nbsp(158****8215)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp吉林省松原市<br>刘冬琳&nbsp&nbsp(136****1311)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp<br>徐诗增&nbsp&nbsp(185****8666)<br>您订购的产品已发货，请留意查收！<hr></li><li style='height: 80px; line-height: 25px;'>2015年09月06日&nbsp&nbsp<br>刘伯坤&nbsp&nbsp(138****8613)<br>您订购的产品已发货，请留意查收！<hr></li>";
+    var str = "<ul style='padding-left:0px;'>";
+    var names = CreateRecord1(mycars,110);
+    var addrs = CreateRecord1(mycars2,110);
+    for(var i=0;i<110;i++){
+        var ph1=Math.floor(Math.random()*10);
+         str+="<li style='  line-height: 20px;'><font>【最新发货】</font>" + GetNowTime('t') +"，"+addrs[i] +names[i] +" ，("+CreateRecord(mycars1,i)+ph1+"****"+ReturnPhone()+")已发货，请留意查收！</li>";
+    } 
+    str+="</ul>";
+
+    document.getElementById("xcnmdemo1").innerHTML=str;
+}
+
+//电话后4位的生成
+function ReturnPhone(){
+    var mastr=Math.floor(Math.random()*10000);
+    if(mastr<=1000){
+        mastr=ReturnPhone();
+    }
+    return mastr;
+}
+//依据小时，获取滚动订单中，当前日期的订单数
+function getTodayOrderNum(hour){ 
+	if(hour<=6) return 0;
+	if(hour<=7) return 3;//8点前，滚动显示5个订单
+	if(hour<=8) return 5;//9点前，滚动显示10个订单
+	if(hour<=9) return 10;//10点前
+	if(hour<=10) return 20;//11点前
+	if(hour<=12) return 40;//13点前
+	if(hour<=14) return 60;//15点前
+	return 10000;
+}
+
+</script>
+<script type="text/javascript" src="../js/dingdan.js" charset="utf-8"></script>
+</body></html>
